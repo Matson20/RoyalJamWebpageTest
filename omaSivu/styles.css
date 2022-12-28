@@ -1,0 +1,252 @@
+body {
+    margin: 5px;
+    color: white;
+    background-color: #100806;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    background-color:#000000 ;
+}
+
+/* Logo */
+div.header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 200px;
+}
+
+/* Navigaatio  */
+#navbar {
+    position: sticky;
+    top:0px;
+    z-index: 3;
+}
+
+#topnav a {
+    color: #e6b632;
+    text-decoration: none;
+    transition: 0.6s;
+    overflow: hidden;
+    padding: 14px 16px;
+}
+
+#topnav a:hover {
+    color: whitesmoke;
+}
+
+nav ul {
+    overflow: hidden;
+    background-color: #151209;
+    text-align: center;
+    padding: 12px;
+}
+
+nav li {
+    display: inline-block;   
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Etusivu, taustakuvat, sijoittelu */
+div.etusivu {
+    color: white;
+    text-align: center;
+    background-image: url(RoyalJamKitara.jpg);
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    width: 100%;
+    height: 800px; 
+    opacity: 0.9;
+}
+
+/* Etusivun toinen kappale, taustakuva, sijoittelu */
+div.palvelut {
+    background-image: url(RoyalJamRivi.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    height: 800px;   
+    opacity: 0.88;
+}
+
+/* Palaute osion sijoitus. Loppu tyylittely flex_itemeissä */
+div.palautteet {
+    text-align: center;
+}
+
+/* Keikat sivulla flex_itemit, lista ja kuvata keskelle.*/
+div.keikat {
+    max-width: 800px;
+    margin: auto;
+    padding: auto;
+}
+
+div.keikat .flex_item img {
+    height:800px;
+    width: 530px;   
+}
+
+#keikatHeader {
+    text-align: center;
+}
+
+/* Kuva galleria. Reunus, koko responsive */
+div.kuvat {
+    margin: 5px;
+    border: 1px solid #977e79;
+    float: left;
+}
+
+div.kuvat img {
+    width: 100%;
+    height: auto;
+}
+
+div.content-wrap h1 {
+    text-align: center;
+}
+
+#kuvatHeader {
+    text-align: center;
+}
+
+div.contact {
+    text-align: center;
+    background-image: url(A-225.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    opacity: 0.9;
+}
+
+#contactHeader {
+    text-align: center;
+}
+
+div.contact h1 {
+    color:#dfd0bf;
+}
+
+/* Kontakti lomakkeen tyylittelyä */
+input, textarea {
+    resize: none;
+}
+
+/* Footer. Sijoitus alas */
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* TESTI
+/* PHONE */
+
+@media only screen and (max-width:480px) {
+
+    div.palvelut {
+        background-image: url(RoyalJamRivi.jpg);
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        height: 900px;   
+        opacity: 0.88;
+    }
+
+    .transbox {
+        background:rgba(161, 148, 141, 0.7);
+        max-width: 800px;
+        position: static;
+        padding: 50px 20px 30px 20px;
+        margin: auto;
+    }
+
+    .transbox p {
+        color: white;
+        text-align: center;
+        letter-spacing: 2.5px;
+    }
+}
+
+/* TABLET */
+
+@media only screen and (min-width:481px) {
+
+    .transbox {
+        background:rgba(161, 148, 141, 0.7);
+        max-width: 800px;
+        position: static;
+        padding: 50px 20px 30px 20px;
+        margin: auto;
+    }
+
+    .transbox p {
+        color: white;
+        text-align: center;
+        letter-spacing: 2.5px;
+    }
+}
+
+/* LAPTOP */
+
+@media only screen and (min-width:1025px) {
+    .transbox {
+        background:rgba(161, 148, 141, 0.7);
+        max-width: 800px;
+        position: static;
+        padding: 50px 20px 30px 20px;
+        margin: auto;
+    }
+
+    .transbox p {
+        color: white;
+        text-align: center;
+        letter-spacing: 2.5px;
+    }
+}
+
+/* Eri sivujen flex_itemien käsittely */
+.flex_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flex_item {
+     flex:0 0 35%;
+     margin:15px;
+}
+
+
